@@ -1,0 +1,206 @@
+.wp-profile {
+  margin-top: 50px;
+
+  .profile-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 90px;
+    }
+
+    i {
+      position: absolute;
+      left: 120px;
+      top: 132px;
+      color: rgba(228, 226, 226, 0.9);
+      font-size: 20px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .inputFile {
+      display: none;
+    }
+
+    .profile-name {
+      color: #505353;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 31px;
+      letter-spacing: -0.02em;
+    }
+
+    .profile-email {
+      color: #505353;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      padding-bottom: 15px;
+    }
+  }
+
+  .profile-info-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .profile-birthday,
+    .profile-phone,
+    .profile-address {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+      width: 100%;
+      border-bottom: 1px solid #DCDCDC;
+    }
+
+    .profile-dob,
+    .profile-num,
+    {
+      padding-left: 15px;
+      color: #505353;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .profile-address-detail {
+      padding-left: 5px;
+      color: #505353;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .icon-birthday {
+      color: #F26525;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .icon-phone {
+      color: #B2D235;
+    }
+
+    .icon-address {
+      color: #662E93;
+    }
+
+    .profile-description {
+      color: #787B7B;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: justify;
+      letter-spacing: -0.02em;
+      padding-top: 15px;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .profile-content {
+    margin-top: 50px;
+
+    .profile-course-title {
+      color: #505353;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 47px;
+      border-bottom: 2px solid #B2D235;
+    }
+
+    .profile-course-detail {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 30px 10px;
+    }
+
+    .profile-course-img {
+      width: 50px;
+      height: 50px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 32px;
+    }
+
+    .profile-course-add {
+      background: #FFFFFF;
+      border: 1.5px solid #B2D235;
+      box-sizing: border-box;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .profile-course-card {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 10px;
+
+    .profile-course-name {
+      color: #505353;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      padding-top: 5px;
+    }
+
+    .icon-add {
+      color: #B2D235;
+    }
+  }
+
+  .profile-update {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+
+    .profile-btn-update {
+      border-radius: 30px;
+      background: #B2D235;
+      border: none;
+    }
+  }
+
+  .profile-edit {
+    margin-top: 30px;
+  }
+
+  .profile-label {
+    color: #505353;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+  }
+}

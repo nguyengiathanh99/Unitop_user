@@ -1,0 +1,33 @@
+.wp-reset {
+  padding: 60px 0;
+  background: #E5E5E5;
+
+  .card-reset-title {
+    background: none;
+    border-bottom: none;
+    color: #B2D235;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+  }
+
+  .btn-reset {
+    padding: 8px 12px;
+    background: #B2D235;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .card-reset-description {
+    color: #505353;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+  }
+}

@@ -1,0 +1,467 @@
+.wp-detail-course {
+  .nav-detail {
+    height: 40px;
+    background: #E9E7E7;
+    display: flex;
+    align-items: center;
+
+    .stext-109 {
+      font-size: 14px;
+      line-height: 1.833333;
+      text-decoration: none;
+    }
+
+    .cl8 {
+      color: #505353;
+    }
+  }
+
+  .detail-link {
+    padding: 10px 147px 10px 155px;
+    background-color: #E9E7E7;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: -0.02em;
+    color: #505353;
+  }
+
+  .detail-content {
+    background-color: #F2F2F2;
+    padding: 30px 162px 60px 155px;
+  }
+
+  .detail-left {
+    width: 100%;
+  }
+
+  .detail-img {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3f6185;
+
+    img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+  }
+
+  .detail-left-content {
+    margin-top: 25px;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+
+  .nav-tabs .nav-item .nav-link {
+    background-color: white;
+  }
+
+  .nav-tabs {
+    border-bottom: 2px solid #DADADA;
+  }
+
+  .nav-item {
+    margin-right: 90px;
+  }
+
+  .nav-tabs .nav-link {
+    margin-bottom: -2px;
+    border: 0;
+    border-bottom: 2px solid #DADADA;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: calc(24.52 / 20);
+    letter-spacing: -0.02em;
+    color: #505353;
+    padding: 1rem 0;
+
+    &.active {
+      border-bottom: 2px solid #B2D235;
+      color: #B2D235;
+
+    }
+  }
+
+  .lesson-top {
+    padding: 30px 0;
+    position: relative;
+    border-bottom: 1px solid #E2E0E0;
+
+    input {
+      font-size: 16px;
+      border: 1px solid #C4C4C4;
+    }
+
+    i {
+      position: absolute;
+      font-size: 15px;
+      top: 42px;
+      left: 170px;
+      color: #505353;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 8px 10px;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: calc(20 / 15);
+      color: white;
+      background-color: #B2D235;
+
+      border: 0;
+      border-radius: 5px;
+      margin-left: 5px;
+
+      &:hover {
+        background-color: #B2D235;
+
+      }
+    }
+  }
+
+  .btn-join-course {
+    color: #fff;
+    background: #B2D235;
+    border-radius: 26px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+    position: absolute;
+    right: 0;
+    padding: 5px 0;
+  }
+
+  .blue {
+    background: #4545ea;
+  }
+
+  .black {
+    background: gray;
+    cursor: not-allowed;
+  }
+
+  .back:hover {
+    background: none;
+  }
+
+  .lesson-item {
+    padding: 20px 0 20px 10px;
+    border-bottom: 1px solid #E2E0E0;
+  ;
+  }
+
+  .lessons {
+    border-bottom: 1px solid #D1D1D1;
+  }
+
+  .lesson-stt {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(25 / 20);
+    letter-spacing: -0.02em;
+    padding-right: 15px;
+    color: #505353;
+  }
+
+  .lesson-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(22 / 20);
+    letter-spacing: -0.02em;
+    color: #505353;
+  }
+
+  .btn-course-learn {
+    background: #B2D235;
+    border: none;
+    box-shadow: inset 0px 1.5px 2px #6f8710;
+    border-radius: 22px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+  }
+
+  .lesson-btn {
+    padding: 7px 22px;
+    background-color: #B2D235;
+
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    line-height: calc(18.39 / 15);
+    box-shadow: inset 0px 1.5px 2px #6f8710;
+    border-radius: 22px;
+
+    &:hover {
+      color: white;
+      background-color: #B2D235;
+      text-decoration: none;
+    }
+  }
+
+  .lesson-item-text {
+    &:hover {
+      .lesson-title,
+      .lesson-stt {
+        color: #B2D235;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .detail-right {
+    margin-left: 25px;
+  }
+
+  .course-description {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+  }
+
+  .description-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: calc(30.65 / 25);
+    letter-spacing: -0.02em;
+    color: #505353;
+    border-bottom: 1px solid #B2D235;
+    padding: 10px 0 15px 0;
+  }
+
+  .description-detail {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: calc(26 / 18);
+    letter-spacing: -0.02em;
+    color: #949292;
+    padding: 15px 0;
+  }
+
+  .course-info {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+  }
+
+  .course-info {
+    i {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: calc(37 / 32);
+      letter-spacing: -0.05em;
+      color: black;
+      padding-right: 25px;
+    }
+
+    span {
+      font-size: 22px;
+      line-height: calc(31 / 25);
+      letter-spacing: -0.02em;
+      color: #505353;
+    }
+  }
+
+  .info-text {
+
+    &.text-lesson {
+      padding-right: 26.5px;
+    }
+
+    &.text-time {
+      padding-right: 51.5px;
+    }
+
+    &.text-tag {
+      padding-right: 67.5px;
+    }
+
+    &.text-price {
+      padding-right: 63.5px;
+    }
+  }
+
+  .course-info {
+    .fa-clock,
+    .fa-key {
+      padding-right: 30px;
+    }
+
+    span {
+      a {
+        font-size: 25px;
+        line-height: calc(31 / 25);
+      }
+    }
+  }
+
+  .colon {
+    padding-right: 15px;
+  }
+
+  .info-item {
+    padding: 30px 0;
+    border-bottom: 1px solid #D1D1D1;
+  }
+
+  .info-price {
+    border-bottom: 0;
+  }
+
+  .course-other {
+    background-color: white;
+    margin-top: 30px;
+  }
+
+  .course-other-content {
+    padding: 10px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+  }
+
+  .course-other-top {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: calc(31 / 25);
+    letter-spacing: -0.05em;
+    color: white;
+    background-color: #B2D235;
+
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .course-other-item {
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(20 /16);
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #E2E0E0;
+    cursor: pointer;
+  }
+
+  .course-other-item:hover {
+    color: #B2D235;
+  }
+
+  .course-other-btn {
+    text-align: center;
+    padding: 20px 0 18px 0;
+
+    button {
+      padding: 7px 25px;
+      background-color: #B2D235;
+
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      box-shadow: inset 0px 1.5px 2px #6f8710;
+      border-radius: 22px;
+      border: 0;
+
+      &:hover {
+        color: white;
+        background-color: #B2D235;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .teacher-content {
+    padding: 30px 10px;
+  }
+
+  .teacher-item {
+    margin-bottom: 55px;
+  }
+
+  .teacher-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: calc(30.65 / 25);
+    color: #505353;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+  }
+
+  .avata-teacher-cus {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
+  .teacher-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: calc(22.07 /18);
+    color: #505353;
+  }
+
+  .item-teacher-info {
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: calc(17.07 / 14);
+      color: #BDB9B9;
+    }
+  }
+
+  .icon-google,
+  .icon-facebook {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .icon-google {
+    border:0.5px solid #F44336;
+    color: #F44336;
+    box-sizing: border-box;
+    margin-right: 5px;
+  }
+
+  .icon-facebook {
+    border: 0.5px solid #1976D2;
+    color: #1976D2;
+    box-sizing: border-box;
+  }
+
+  .item-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: calc(26 / 18);
+    letter-spacing: -0.02em;
+    color: #949292;
+  }
+
+  .page-link {
+    color: #B2D235;
+  }
+
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #B2D235;
+    border-color: #B2D235;
+  }
+}

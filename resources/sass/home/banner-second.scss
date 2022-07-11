@@ -1,0 +1,164 @@
+.hapo-banner-second {
+  background-image: url("https://res.cloudinary.com/derrfxjxx/image/upload/v1647077354/image_become_xyror5.png");
+  height: 469px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  margin-top: 50px;
+
+  .hapo-banner-second-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+    .banner-second-content {
+      font-size: 45px;
+      text-align: center;
+      font-weight: 700;
+      color: $banner-second-content;
+      line-height: 70px;
+      letter-spacing: -0.02em;
+      padding-bottom: 15px;
+    }
+
+    .banner-second-btn {
+      background: $banner-second-content;
+      border-radius: 35px;
+      font-size: 25px;
+      letter-spacing: -0.05em;
+      color: $banner-second-btn-text;
+      padding: 10px 50px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .banner-second-btn:hover {
+      background: #e8e8e8;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hapo-banner-second {
+    height: 350px;
+
+    .hapo-banner-second-content {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hapo-banner-second {
+    .hapo-banner-second-content {
+      padding-top: 22px;
+
+      .banner-second-content {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hapo-banner-second {
+    height: 260px;
+
+    .hapo-banner-second-content {
+      padding-top: 40px;
+
+      .banner-second-content {
+        font-size: 30px;
+        line-height: 50px;
+      }
+
+      .banner-second-btn {
+        padding: 6px 25px;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hapo-banner-second {
+    height: 203px;
+
+    .hapo-banner-second-content {
+      padding-top: 25px;
+
+      .banner-second-content {
+        font-size: 27px;
+        line-height: 45px;
+      }
+
+      .banner-second-btn {
+        padding: 6px 20px;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hapo-banner-second {
+    .hapo-banner-second-content {
+      padding-top: 16px;
+
+      .banner-second-content {
+        font-size: 23px;
+      }
+
+      .banner-second-btn {
+        padding: 4px 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .hapo-banner-second {
+    height: 165px;
+
+    .hapo-banner-second-content {
+      padding-top: 14px;
+
+      .banner-second-content {
+        font-size: 18px;
+        line-height: 38px;
+      }
+
+      .banner-second-btn {
+        padding: 5px 21px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hapo-banner-second {
+    height: 145px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hapo-banner-second {
+    .hapo-banner-second-content {
+      padding-top: 16px;
+
+      .banner-second-content {
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      .banner-second-btn {
+        padding: 3px 18px;
+        font-size: 12px;
+      }
+    }
+  }
+}
