@@ -35,12 +35,12 @@ class ProfileRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'Name is required',
-            'address.required' => 'Address is required',
-            'dob.required' => 'Date of birth is required',
-            'dob.after' => 'Date of birth must be date before today',
-            'phone.required' => 'Phone is required',
-            'phone.max' => 'Phone is too long',
+            'name.required' => 'Tên không được để trống',
+            'address.required' => 'Địa chỉ không được để trống',
+            'dob.required' => 'Ngày sinh không được để trống',
+            'dob.after' => 'Ngày sinh phải trước ngày hôm nay',
+            'phone.required' => 'Số điện thoại không được để trống',
+            'phone.max' => 'Số điên thoại quá dài',
         ];
     }
 }

@@ -99,32 +99,34 @@
             </div>
             <div class="hapo-feed-back-body">
                 <div class="row slick">
-                    @foreach($reviews as $review)
-                        <div class="col-12">
-                            <div class="feed-back-up">
-                                <div class="feed-back-sort-down"></div>
-                                <p class="feed-back-border"></p>
-                                <p class="feed-back-up-content">{{ $review->comment }}</p>
-                            </div>
-                            <div class="feed-back-down">
-                                <div class="feed-back-img">
-                                    <img src="{{ $review->user->image ? url($review->user->image) : asset('public/storage/images/avt.png') }}" alt="Unitop Avatar">
+                    @if (empty($reviews))
+                        @foreach($reviews as $review)
+                            <div class="col-12">
+                                <div class="feed-back-up">
+                                    <div class="feed-back-sort-down"></div>
+                                    <p class="feed-back-border"></p>
+                                    <p class="feed-back-up-content">{{ $review->comment }}</p>
                                 </div>
-                                <div class="feed-back-down-content">
-                                    <p class="feed-back-name">{{ $review->user->name }}</p>
-                                    <p class="feed-back-span">{{ $review->user->job }}</p>
-                                    <p class="feed-back-star">
-                                        @for($i = 1; $i <= $review->vote; $i++)
-                                            <i class="fas fa-star"></i>
-                                        @endfor
-                                        @for($i = 5; $i > $review->vote; $i--)
-                                            <i class="fas fa-star star-special"></i>
-                                        @endfor
-                                    </p>
+                                <div class="feed-back-down">
+                                    <div class="feed-back-img">
+                                        <img src="{{ $review->user->image ? url($review->user->image) : asset('public/storage/images/avt.png') }}" alt="Unitop Avatar">
+                                    </div>
+                                    <div class="feed-back-down-content">
+                                        <p class="feed-back-name">{{ $review->user->name }}</p>
+                                        <p class="feed-back-span">{{ $review->user->job }}</p>
+                                        <p class="feed-back-star">
+                                            @for($i = 1; $i <= $review->vote; $i++)
+                                                <i class="fas fa-star"></i>
+                                            @endfor
+                                            @for($i = 5; $i > $review->vote; $i--)
+                                                <i class="fas fa-star star-special"></i>
+                                            @endfor
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>
@@ -132,8 +134,8 @@
     <div class="hapo-banner-second">
         <div class="hapo-banner-second-content">
             <div class="banner-second-content">
-            Trở thành thành viên của chúng tôi <br>
-            cộng đồng đang phát triển!
+                Trở thành thành viên của chúng tôi <br>
+                cộng đồng đang phát triển!
             </div>
             <button class="banner-second-btn">Bắt đầu học bây giờ!</button>
         </div>

@@ -1,6 +1,6 @@
 {
-    "/js/app.js": "/js/app.js?id=fbce5b6333161e1363788a8ff34ada8a",
-    "/css/app.css": "/css/app.css?id=51d0f21c81aa083096d97e3e3ade4399",
+    "/js/app.js": "/js/app.js?id=2fe3e7eeb3f7d0cb78d086635a1e9ff3",
+    "/css/app.css": "/css/app.css?id=eedb704b96e2f41bc7b89fb6cac132f2",
     "/images/avt.png": "/images/avt.png?id=05114b0b7c4a9539f5f948b951e28368",
     "/images/banner-second.png": "/images/banner-second.png?id=fec3dfceb78160f64e952bc261183253",
     "/images/birdlogo.png": "/images/birdlogo.png?id=b31c293ec3d155f54dc9259855ad9e83",
@@ -32,5 +32,7 @@
     "/images/messlogo.png": "/images/messlogo.png?id=f8ed88e26bc9cb0388f5e5b1b5c7baae",
     "/images/polygon.png": "/images/polygon.png?id=b5c13e60a877e35b076ce058e44db243",
     "/images/review-avatar.png": "/images/review-avatar.png?id=de52cfbf7c2d22e98e08d71da05b3709",
-    "/images/transparent-1911160_1280.png": "/images/transparent-1911160_1280.png?id=39919f2b585e3f066b098c436e4cecd6"
+    "/images/transparent-1911160_1280.png": "/images/transparent-1911160_1280.png?id=39919f2b585e3f066b098c436e4cecd6",
+    "/images/UT.png": "/images/UT.png?id=10d39d369cd2d3619847addfa4bf593d",
+    "/images/vendor/slick-carousel/slick/ajax-loader.gif": "/images/vendor/slick-carousel/slick/ajax-loader.gif?id=c5f04404df58fc3deb42d69f94476b6c"
 }

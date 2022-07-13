@@ -65,7 +65,7 @@
                                                 <input type="text"
                                                        class="form-control @error('name') is-invalid @enderror"
                                                        id="name"
-                                                       placeholder="Your name..." name="name" value="{{ $user->name }}">
+                                                       placeholder="Tên..." name="name" value="{{ $user->name }}">
                                                 @error('name')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -87,7 +87,7 @@
                                                 <input type="text"
                                                        class="form-control @error('address') is-invalid @enderror"
                                                        id="address"
-                                                       placeholder="Your address..." name="address" value="{{ $user->address }}">
+                                                       placeholder="Địa chỉ..." name="address" value="{{ $user->address }}">
                                                 @error('address')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -107,7 +107,7 @@
                                                 <input type="number"
                                                        class="form-control @error('phone') is-invalid @enderror"
                                                        id="phone"
-                                                       placeholder="Your phone..." name="phone" value="{{ $user->phone }}">
+                                                       placeholder="Số điện thoại..." name="phone" value="{{ $user->phone }}">
                                                 @error('phone')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -118,12 +118,12 @@
                                                 <label for="description" class="profile-label">Thông tin về tôi</label>
                                                 <textarea name="description" class="form-control" id="description"
                                                           rows="3"
-                                                          placeholder="About you...">{{ $user->description }}</textarea>
+                                                          placeholder="Giới thiệu về tôi...">{{ $user->description }}</textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="profile-update">
-                                        <button type="submit" class="btn btn-success profile-btn-update">Update</button>
+                                        <button type="submit" class="btn btn-success profile-btn-update">Cập nhật</button>
                                     </div>
                                 </div>
                             </div>

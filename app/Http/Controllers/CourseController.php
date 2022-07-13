@@ -25,7 +25,7 @@ class CourseController extends Controller
         $lessons = $course->lessons()->search($request->all())->paginate(config('course.item_page'));
         $otherCourses = Courses::others($id)->get();
         $teachers = $course->teachers()->get();
-        $reviews = $course->reviews()->paginate(config('course.item_page'));
+        $reviews = $course->reviews()->where('status', true)->paginate(config('course.item_page'));
 
         return view('courses.show', compact('course', 'otherCourses', 'request', 'lessons', 'teachers', 'reviews', 'courses'));
     }

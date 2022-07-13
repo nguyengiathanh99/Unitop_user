@@ -13,9 +13,9 @@
                                 @for($i = 1; $i <= $course->coursestar; $i++)
                                     <i class="fas fa-star star-review"></i>
                                 @endfor
-                                    @for($i = 5; $i > $course->coursestar; $i--)
-                                        <i class="fas fa-star"></i>
-                                    @endfor
+                                @for($i = 5; $i > $course->coursestar; $i--)
+                                    <i class="fas fa-star"></i>
+                                @endfor
                             </div>
                             <div class="review-star-rating">{{ $course->coursestar }} Xếp hạng</div>
                         </div>
@@ -140,32 +140,34 @@
                         </div>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                              data-parent="#accordionExample">
-                            <div class="card-body">
-                                @foreach($reviews as $review)
-                                    <div class="review-show-main">
-                                        <div class="review-show-profile">
-                                            <div class="review-show-avatar">
-                                                <img src="{{ $review->user->image ? url($review->user->image) : asset('public/storage/images/avt.png') }}" alt="">
+                            @if (!empty($reviews))
+                                <div class="card-body">
+                                    @foreach($reviews as $review)
+                                        <div class="review-show-main">
+                                            <div class="review-show-profile">
+                                                <div class="review-show-avatar">
+                                                    <img src="{{ $review->user->image ? url($review->user->image) : asset('public/storage/images/avt.png') }}" alt="">
+                                                </div>
+                                                <p class="review-show-name">{{ $review->user->name }}</p>
+                                                <div class="review-show-star">
+                                                    @for($i = 1; $i <= $review->vote; $i++)
+                                                        <i class="fas fa-star icon-star-review"></i>
+                                                    @endfor
+                                                    @for($i = 5; $i > $review->vote; $i--)
+                                                        <i class="fas fa-star"></i>
+                                                    @endfor
+                                                </div>
+                                                <span class="show-date">
+                                            {{ date('d-m-Y', strtotime($review->created_at)) }}
+                                         </span>
                                             </div>
-                                            <p class="review-show-name">{{ $review->user->name }}</p>
-                                            <div class="review-show-star">
-                                                @for($i = 1; $i <= $review->vote; $i++)
-                                                    <i class="fas fa-star icon-star-review"></i>
-                                                @endfor
-                                                @for($i = 5; $i > $review->vote; $i--)
-                                                    <i class="fas fa-star"></i>
-                                                @endfor
-                                            </div>
-                                            <span class="show-date">
-                                                                {{ date('d-m-Y', strtotime($review->created_at)) }}
-                                                            </span>
+                                            <p class="review-show-content">
+                                                {{ $review->comment }}
+                                            </p>
                                         </div>
-                                        <p class="review-show-content">
-                                            {{ $review->comment }}
-                                        </p>
-                                    </div>
-                                @endforeach
-                            </div>
+                                    @endforeach
+                                </div>
+                            @endif
                             {!! $reviews->links('paginate.my-paginate') !!}
                         </div>
                     </div>
