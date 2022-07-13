@@ -36,7 +36,7 @@ class ProfileController extends Controller
         // }
         $user = Auth::user()->update($data);
         if ($user) {
-            return redirect()->back()->with('message', 'Update successfully');
+            return redirect()->back()->with('message', 'Cập nhật thành công');
         }
     }
 }

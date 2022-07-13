@@ -26,7 +26,7 @@
             </div>
             <div class="hapo-list-course-statistic-right">
                 <div class="list-course-specical-title">Thời gian</div>
-                <div class="list-course-specical-num">{{ $course->time_course }} (h)</div>
+                <div class="list-course-specical-num">{{ $course->time_course }} (p)</div>
             </div>
         </div>
     </div>

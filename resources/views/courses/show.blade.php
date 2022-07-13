@@ -132,7 +132,7 @@
                         <i class="fas fa-clock"></i>
                         <span class="info-text">Thời gian</span>
                         <span class="colon">:</span>
-                        <span class="data">{{ $course->time_course }} giờ</span>
+                        <span class="data">{{ $course->time_course }} phút</span>
                     </div>
                     {{-- <div class="info-item info-tag d-flex align-items-center">
                         <i class="fas fa-key"></i>

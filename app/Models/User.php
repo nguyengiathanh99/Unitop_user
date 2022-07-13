@@ -30,8 +30,9 @@ class User extends Authenticatable
         'about',
         'description',
         'status',
+        'address',
         'facebook_id',
-        'google_id'
+        'google_id',
     ];
 
     /**
