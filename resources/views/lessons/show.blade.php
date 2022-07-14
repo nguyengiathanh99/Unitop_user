@@ -33,7 +33,7 @@
                             </div>
                             <div id="doc-iframe">
                                 @foreach ($lessons->documents()->get() as $item)
-                                    <video width="100%" height="100%" controls="true" poster="" id="video" autoplay>
+                                    <video width="100%" height="100%" controls="true" poster="" id="video">
                                         <source src="http://localhost:8080/Unitop_Admin/public/{{ $item->file_path }}"
                                                 type="video/mp4">
                                     </video>
@@ -254,20 +254,13 @@
                                         <div class="tab-pane fade profile-overview" id="profile-overview">
                                             <div class="detail-lessons-desc-main">
                                                 <div class="detail-lessons-title text-center">Giới thiệu bài học</div>
+                                                <div class="detail-lessons-image">
+                                                    <img src="http://localhost:8080/Unitop_Admin/public/{{ $lessons->image }}" alt="Intro-lesson">
+                                                </div>
                                                 <div class="detail-lessons-desc">
                                                     {{ $lessons->description }}
                                                 </div>
                                             </div>
-                                            {{-- <div class="detail-lessons-tag-main">
-                                                <div class="detail-lessons-tag">Tag:</div>
-                                                <div class="detail-lesson-tag-content">
-                                                    @foreach($course->tags as $item)
-                                                        <a href="{{ route('courses.index',['search_tag' => $item->id]) }}"
-                                                           class="link-tag">
-                                                            {{  $item->name }}</a>
-                                                    @endforeach
-                                                </div>
-                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>

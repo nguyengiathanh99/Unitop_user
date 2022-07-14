@@ -15,7 +15,6 @@
     @include('layouts.header')
     @yield('content')
     @include('layouts.footer')
-{{--    @include('layouts.message')--}}
 </div>
 </body>
 <script src="{{ asset('js/app.js') }}"></script>
