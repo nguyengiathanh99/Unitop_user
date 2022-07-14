@@ -70,17 +70,6 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row hapo-listcourse-select-main-second">
-                        <div class="col-1"></div>
-                        <div class="col-md-2">
-                            <select class="form-select" aria-label="Default select example" name="search_tag">
-                                <option value="">Tag</option>
-                                @foreach($tags as $tag)
-                                    <option value="{{ $tag->id }}" @if(isset($request['search_tag']) && $request['search_tag'] == $tag->id) selected @endif>{{ $tag->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                    </div>
                 </div>
             </form>
             <div class="hapo-list-course-main">

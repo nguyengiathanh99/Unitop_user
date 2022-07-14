@@ -81,11 +81,11 @@ class Courses extends Model
             $query->orderBy('id', $data['created_time']);
         }
 
-        if (isset($data['search_tag']) && !is_null($data['search_tag'])) {
-            $query->whereHas('tags', function ($subQuery) use ($data) {
-                $subQuery->where('tag_id', $data['search_tag']);
-            });
-        }
+        // if (isset($data['search_tag']) && !is_null($data['search_tag'])) {
+        //     $query->whereHas('tags', function ($subQuery) use ($data) {
+        //         $subQuery->where('tag_id', $data['search_tag']);
+        //     });
+        // }
 
         if (isset($data['search_learner']) && !is_null($data['search_learner'])) {
             $query->withCount('users')->orderBy('users_count', $data['search_learner']);

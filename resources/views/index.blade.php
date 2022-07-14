@@ -50,7 +50,7 @@
                                 <div class="card-content">
                                     {{ $course->description }}
                                 </div>
-                                <button class="card-btn">Tham gia khóa học</button>
+                                <a href="{{ route('courses.show', $course->id) }}" class="card-btn" style="text-decoration: none">Tham gia khóa học</a>
                             </div>
                         </div>
                     </div>

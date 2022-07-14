@@ -33,7 +33,7 @@
                             </div>
                             <div id="doc-iframe">
                                 @foreach ($lessons->documents()->get() as $item)
-                                    <video width="100%" height="100%" controls="true" poster="" id="video">
+                                    <video width="100%" height="100%" controls="true" poster="" id="video" autoplay>
                                         <source src="http://localhost:8080/Unitop_Admin/public/{{ $item->file_path }}"
                                                 type="video/mp4">
                                     </video>
@@ -167,22 +167,24 @@
                                     <!-- Bordered Tabs -->
                                     <ul class="nav nav-tabs nav-tabs-bordered">
                                         <li class="nav-item">
-                                            <button class="nav-link active" data-bs-toggle="tab"
-                                                    data-bs-target="#profile-edit">
+                                            <button class="nav-link active" data-toggle="tab"
+                                            aria-controls="profile-edit"
+                                                    data-target="#profile-edit">
                                                 Chương trình
                                             </button>
                                         </li>
                                         <li class="nav-item">
-                                            <button class="nav-link" data-bs-toggle="tab"
-                                                    data-bs-target="#profile-overview">Giới thiệu
+                                            <button class="nav-link" data-toggle="tab"
+                                            aria-controls="profile-overview"
+                                                    data-target="#profile-overview">Giới thiệu
                                             </button>
                                         </li>
                                     </ul>
                                     <div class="tab-content pt-2">
                                         <div class="tab-pane show active fade profile-edit pt-3" id="profile-edit">
                                             <div class="main-teacher">
-                                                <div class="title-program">
-                                                    <p>Bài giảng</p>
+                                                <div class="title-program text-center">
+                                                    <p>Danh sách bài giảng</p>
                                                 </div>
                                                 @foreach($lessons->documents()->get() as $document)
                                                     <div class="program-main">
@@ -197,7 +199,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-9">
-                                                                            <div class="program-title">{{ $document->title }}</div>
+                                                                            <div class="program-title">{{ $document->name }}</div>
                                                                         </div>
                                                                         {{-- <div class="col-md-8">
                                                                             <div class="program-name">{{ $document->name }}</div>
@@ -215,7 +217,7 @@
                                                                             <input type="hidden" name="document_id"
                                                                                    value="{{ $document->id }}">
                                                                             <div id="status" class="incomplete">
-                                                                                {{--                                                                                 <span>Play status: </span>--}}
+
                                                                                 <span class="status complete"><button
                                                                                             type="submit"
                                                                                             class="btn btn-success btn-program-success program-success status complete"
@@ -251,13 +253,7 @@
                                         </div>
                                         <div class="tab-pane fade profile-overview" id="profile-overview">
                                             <div class="detail-lessons-desc-main">
-                                                <div class="detail-lessons-title">Tổng quan</div>
-                                                <div class="detail-lessons-desc">
-                                                    {{ $lessons->description }}
-                                                </div>
-                                            </div>
-                                            <div class="detail-lessons-requirement-main">
-                                                <div class="detail-lessons-title">Yêu cầu</div>
+                                                <div class="detail-lessons-title text-center">Giới thiệu bài học</div>
                                                 <div class="detail-lessons-desc">
                                                     {{ $lessons->description }}
                                                 </div>
