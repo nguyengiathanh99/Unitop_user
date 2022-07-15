@@ -545,3 +545,18 @@
         object-fit: contain;
     }
 }
+
+.btn-note {
+    float: right;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #f33a58;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-note:hover {
+    background: #cb4659;
+}

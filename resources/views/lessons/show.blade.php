@@ -63,7 +63,8 @@
                                                 <div class="col-md-6">
                                                     <p>Học viên:</p>
                                                 </div>
-                                                <div class="col-md-4 information-item-detail">{{ $course->learner_course }}</div>
+                                                <div
+                                                    class="col-md-4 information-item-detail">{{ $course->learner_course }}</div>
                                             </div>
                                         </div>
                                         <div class="information-times information-item">
@@ -75,27 +76,10 @@
                                                     <p>Thời gian:</p>
                                                 </div>
                                                 <div class="col-md-4 information-item-detail">{{ $course->time_course }}
-                                                    giờ
+                                                    (p)
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <div class="information-tags information-item">
-                                            <div class="row info-detail-course">
-                                                <div class="col-md-1">
-                                                    <i class="fas fa-key"></i>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p>Tags:</p>
-                                                </div>
-                                                <div class="col-md-7">
-                                                    @foreach($course->tags as $item)
-                                                        <a href="{{ route('courses.index',['search_tag' => $item->id]) }}"
-                                                           class="link-tag">
-                                                            {{  $item->name }}</a>
-                                                    @endforeach
-                                                </div>
-                                            </div>
-                                        </div> --}}
                                         <div class="information-price information-item">
                                             <div class="row info-detail-course">
                                                 <div class="col-md-2">
@@ -104,7 +88,8 @@
                                                 <div class="col-md-6">
                                                     <p>Giá:</p>
                                                 </div>
-                                                <div class="col-md-4 information-item-detail">{{ $course->processed_price }}</div>
+                                                <div
+                                                    class="col-md-4 information-item-detail">{{ $course->processed_price }}</div>
                                             </div>
                                         </div>
                                         <div class="information-price information-item information-item-lesson">
@@ -168,14 +153,14 @@
                                     <ul class="nav nav-tabs nav-tabs-bordered">
                                         <li class="nav-item">
                                             <button class="nav-link active" data-toggle="tab"
-                                            aria-controls="profile-edit"
+                                                    aria-controls="profile-edit"
                                                     data-target="#profile-edit">
                                                 Chương trình
                                             </button>
                                         </li>
                                         <li class="nav-item">
                                             <button class="nav-link" data-toggle="tab"
-                                            aria-controls="profile-overview"
+                                                    aria-controls="profile-overview"
                                                     data-target="#profile-overview">Giới thiệu
                                             </button>
                                         </li>
@@ -194,24 +179,24 @@
                                                                     <div class="row">
                                                                         <div class="col-md-3">
                                                                             <div class="program-thumb-nail">
-                                                                                <img src="http://localhost:8080/Unitop_Admin/public/{{ $document->image }}"
-                                                                                     alt="{{ $document->name }}">
+                                                                                <img
+                                                                                    src="http://localhost:8080/Unitop_Admin/public/{{ $document->image }}"
+                                                                                    alt="{{ $document->name }}" style="object-fit: contain">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-9">
-                                                                            <div class="program-title">{{ $document->name }}</div>
+                                                                            <div
+                                                                                class="program-title" style="color: black; font-weight: bold">{{ $document->name }}</div>
                                                                         </div>
-                                                                        {{-- <div class="col-md-8">
-                                                                            <div class="program-name">{{ $document->name }}</div>
-                                                                        </div> --}}
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="row">
                                                                     <div class="col-md-6">
-                                                                        <form action="{{ route('user_lessons.update', $lessons->id) }}"
-                                                                              method="post">
+                                                                        <form
+                                                                            action="{{ route('user_lessons.update', $lessons->id) }}"
+                                                                            method="post">
                                                                             @method('PUT')
                                                                             @csrf
                                                                             <input type="hidden" name="document_id"
@@ -219,9 +204,9 @@
                                                                             <div id="status" class="incomplete">
 
                                                                                 <span class="status complete"><button
-                                                                                            type="submit"
-                                                                                            class="btn btn-success btn-program-success program-success status complete"
-                                                                                            @if($document->user_document) disabled @endif>
+                                                                                        type="submit"
+                                                                                        class="btn btn-success btn-program-success program-success status complete"
+                                                                                        @if($document->user_document) disabled @endif>
                                                                                 @if($document->user_document)
                                                                                             Đã hoàn thành @else
                                                                                             Hoàn thành @endif
@@ -237,15 +222,47 @@
                                                                         </form>
                                                                     </div>
                                                                     <div class="col-md-6">
-                                                                        <div id="doc-view" style="cursor: pointer" class="watch-video bg-info">
+                                                                        <div id="doc-view" style="cursor: pointer"
+                                                                             class="watch-video bg-info">
                                                                             Xem video
                                                                         </div>
                                                                         <div class="container" style="margin-top: 30px">
                                                                             {!! $shareButtons1 !!}
+{{--                                                                            <div class="note">--}}
+{{--                                                                                <a href="#">--}}
+{{--                                                                                    <i class="fa fa-edit"></i>--}}
+{{--                                                                                </a>--}}
+{{--                                                                            </div>--}}
+{{--                                                                            <div class="icon-list-note">--}}
+{{--                                                                                <a href="#">--}}
+{{--                                                                                    <i class="fa fa-file"></i>--}}
+{{--                                                                                </a>--}}
+{{--                                                                            </div>--}}
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="add-note">
+                                                                <form action="{{ route('note.create',$lessons->id) }}"
+                                                                      method="post">
+                                                                    @csrf
+                                                                    <div class="form-group">
+                                                                        <label for="note">Nhập ghi chú</label>
+                                                                        <input type="hidden" value="{{ $course->id }}"
+                                                                               name="course_id">
+                                                                        <textarea name="text-note" class="form-control"
+                                                                                  id="note" rows="3"></textarea>
+                                                                    </div>
+                                                                    <button class="btn-note">Tạo ghi chú</button>
+                                                                </form>
+                                                            </div>
+{{--                                                            Xem danh sách --}}
+                                                            <form action="" method="get">
+                                                                   @foreach($notes as $note)
+                                                                        <hr>
+                                                                       <div>{{ $note->content }}</div>
+                                                                    @endforeach
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 @endforeach
@@ -255,7 +272,9 @@
                                             <div class="detail-lessons-desc-main">
                                                 <div class="detail-lessons-title text-center">Giới thiệu bài học</div>
                                                 <div class="detail-lessons-image">
-                                                    <img src="http://localhost:8080/Unitop_Admin/public/{{ $lessons->image }}" alt="Intro-lesson">
+                                                    <img
+                                                        src="http://localhost:8080/Unitop_Admin/public/{{ $lessons->image }}"
+                                                        alt="Intro-lesson">
                                                 </div>
                                                 <div class="detail-lessons-desc">
                                                     {{ $lessons->description }}

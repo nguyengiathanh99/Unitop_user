@@ -77,7 +77,7 @@
                                                             </div>
                                                             <div class="col-md-9">
                                                                 <div class="lesson-name">
-                                                                    <p>{{ $lesson->name }}</p>
+                                                                    <p style="cursor: pointer">{{ $lesson->name }}</p>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">

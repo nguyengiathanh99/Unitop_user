@@ -99,7 +99,7 @@
             </div>
             <div class="hapo-feed-back-body">
                 <div class="row slick">
-                    @if (empty($reviews))
+                    @if (!empty($reviews))
                         @foreach($reviews as $review)
                             <div class="col-12">
                                 <div class="feed-back-up">

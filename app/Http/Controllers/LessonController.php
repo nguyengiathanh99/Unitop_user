@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Courses;
 use App\Models\Lessons;
+use App\Models\Notes;
+use Illuminate\Support\Facades\Auth;
 
 class LessonController extends Controller
 {
@@ -12,6 +14,10 @@ class LessonController extends Controller
         $lessons = Lessons::find($lessonId);
         $course = Courses::find($courseId);
         $otherCourses = Courses::others($courseId)->get();
+        $notes = Notes::query()->where('course_id', $courseId)
+            ->where('lesson_id', $lessonId)
+            ->where('user_id', Auth::id())
+            ->get();
         // Share button 1
         $shareButtons1 = \Share::page(
             'https://www.youtube.com/watch?v=zwsPND378OQ&list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz&index=2&ab_channel=F8Official',
@@ -20,6 +26,6 @@ class LessonController extends Controller
             ->facebook()
             ->twitter()
             ->linkedin();
-        return view('lessons.show', compact('lessons', 'course', 'otherCourses', 'shareButtons1'));
+        return view('lessons.show', compact('lessons', 'course', 'otherCourses', 'shareButtons1', 'notes'));
     }
 }

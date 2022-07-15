@@ -9,7 +9,7 @@
                 <p class="list-course-content-txt">{{ $course->description }}</p>
             </div>
             <div class="course-wish">
-                <a href="javascript:void(0);" data-id="{{ $course->id }}" class="ic-heart"><i class="fa fa-heart"></i>80</a>
+{{--                <a href="javascript:void(0);" data-id="{{ $course->id }}" class="ic-heart"><i class="fa fa-heart"></i>80</a>--}}
             </div>
         </div>
         <div class="list-course-btn">

@@ -8,6 +8,7 @@ use App\Http\Controllers\UserCourseController;
 use App\Http\Controllers\UserLessonController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\NoteController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\HeartController;
@@ -42,3 +43,5 @@ Route::get('/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('/google/callback', [GoogleController::class, 'handleGoogleCallBack']);
 Route::get('heart/index', [HeartController::class, 'index'])->name('heart.index');
 
+//Notes
+Route::post('/note/create/{id}', [NoteController::class, 'create'])->name('note.create');
